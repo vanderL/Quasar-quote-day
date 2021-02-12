@@ -12,10 +12,9 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Master Learning
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +29,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Master Learning First Project!
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -51,47 +50,17 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    title: 'Inicio',
+    caption: 'Inicio da aplicação',
     icon: 'school',
     link: 'https://quasar.dev'
   },
   {
     title: 'Github',
-    caption: 'github.com/quasarframework',
+    caption: 'Meu Github',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: 'https://github.com/vanderL'
   },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
 ];
 
 export default {
@@ -105,3 +74,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+  .q-header {
+    background-color: #45c;
+  }
+</style>
